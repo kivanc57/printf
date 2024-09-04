@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  printf:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+    - ../src:/usr/src/printf/src
+    - ../inc:user/src/printf/inc
+    command: ./printf
