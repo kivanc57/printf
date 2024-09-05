@@ -1,5 +1,5 @@
 # Use gcc compiler for C
-FROM gcc:latest
+FROM gcc:14.2.0-bookworm
 
 # Set the working directory
 WORKDIR /usr/src/printf
