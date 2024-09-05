@@ -2,9 +2,10 @@
 
 cd DockerFileFolder
 
-#Build the Docker image use parent directory (..) as the context
+#Build the Docker image
 
-docker build -t local-printf:latest -f Dockerfile ..
+docker build -t local-printf:latest -f DockerFileFolder/Dockerfile DockerFileFolder
+
 
 #Check if the image is created
 
