@@ -4,7 +4,7 @@ cd DockerFileFolder
 
 #Build the Docker image
 
-docker build -t local-printf:latest -f DockerFileFolder/Dockerfile DockerFileFolder
+docker build -t local-printf:latest .
 
 
 #Check if the image is created
@@ -22,4 +22,3 @@ docker ps
 #Inspect the container interactively with bash
 
 docker run -it local-printf:latest /bin/bash
-
