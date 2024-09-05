@@ -5,10 +5,10 @@ FROM gcc:latest
 WORKDIR /usr/src/printf
 
 #Copy header files from the 'inc' directory
-COPY ../inc ./inc
+COPY inc ./inc
 
 #Copy source files from the 'src' directory
-COPY ../src ./src
+COPY src ./src
 
 #Compile the C source files using 'cc' with specified tags
 RUN cc -Wall -Wextra -Werror -o printf ./src/*.c
