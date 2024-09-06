@@ -1,0 +1,33 @@
+<# Do not forget to add DOCKERHUB_USERNAME and DOCKERHUB_TOKEN to Settings/Secrets and variables/Actions
+# Docker files > DockerFileFolder
+# .yml files > .github/workflows/
+
+name: Build and Push Docker image to Docker Hub
+
+on:
+  push:
+    branches:
+      - feature/add-docker-and-action
+
+jobs:
+  build_and_push:
+    name: Build and Push Docker Image to Docker Hub
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and Push Docker Image
+        if: success() #Push everything was successful
+        uses: docker/build-push-action@v4
+        with:
+          context: DockerFileFolder/
+          # dockerfile: DockerFileFolder/Dockerfile
+          push: true
+          tags: kivanc57/printf:latest #DockerHub repo
