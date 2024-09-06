@@ -13,9 +13,9 @@ name: "CodeQL Advanced"
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "feature/add-docker-and-action" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "feature/add-docker-and-action" ]
   schedule:
     - cron: '27 15 * * 5'
 
