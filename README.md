@@ -1,24 +1,23 @@
-#Move to the DockerFileFolder
+Move to the DockerFileFolder
 
-cd DockerFileFolder
+`cd DockerFileFolder`
 
-#Build the Docker image
+Build the Docker image
 
-docker build -t local-printf:latest .
+`docker build -t local-printf:latest .`
 
+Check if the image is created
 
-#Check if the image is created
+`docker images`
 
-docker images
+Run the image as a container
 
-#Run the image as a container
+`docker run --rm local-printf:latest`
 
-docker run --rm local-printf:latest
+Check the container status
 
-#Check the container status
+`docker ps`
 
-docker ps
+Inspect the container interactively with bash
 
-#Inspect the container interactively with bash
-
-docker run -it local-printf:latest /bin/bash
+`docker run -it local-printf:latest /bin/bash`
