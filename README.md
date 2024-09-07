@@ -1,6 +1,6 @@
 Move to the DockerFileFolder
 
-`cd DockerFileFolder`
+`cd build-context`
 
 Build the Docker image
 
