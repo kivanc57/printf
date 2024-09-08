@@ -7,5 +7,5 @@ services:
       dockerfile: Dockerfile
     volumes:
     - ../src:/usr/src/printf/src
-    - ../inc:user/src/printf/inc
+    - ../inc:usr/src/printf/inc
     command: ./printf

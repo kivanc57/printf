@@ -5,10 +5,10 @@ FROM gcc:14.2.0-bookworm
 WORKDIR /usr/src/printf
 
 # Copy header files from the 'inc' directory
-COPY inc /usr/src/printf/inc
+COPY inc ./inc
 
 # Copy source files from the 'src' directory
-COPY src /usr/src/printf/src
+COPY ./src
 
 # Copy the MakeFile
 COPY Makefile /usr/src/printf/
