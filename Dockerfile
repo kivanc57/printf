@@ -8,10 +8,10 @@ WORKDIR /usr/src/printf
 COPY inc ./inc
 
 # Copy source files from the 'src' directory
-COPY src ./src
+COPY src./src
 
 # Copy the MakeFile
-COPY Makefile /usr/src/printf/
+COPY Makefile ./
 
 # Execute make
 RUN make
