@@ -8,8 +8,8 @@ __pycache__/
 *.o
 
 # Folders
-sample
-tests
+sample/
+tests/
 
 # Others
 LICENSE
@@ -17,7 +17,7 @@ manual.pdf
 README.md
 .gitattributes
 .gitignore
-.github
+.github/
 
 # Editor directories and files
 .idea/

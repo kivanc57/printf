@@ -4,7 +4,7 @@ Move to the DockerFileFolder
 
 Build the Docker image
 
-`docker build -t local-printf:latest .`
+`docker build -f Dockerfile -t local-printf:latest .`
 
 Check if the image is created
 

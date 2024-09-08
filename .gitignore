@@ -8,8 +8,8 @@ __pycache__/
 *.o
 
 # Folders
-sample
-tests
+sample/
+tests/
 
 # Editor directories and files
 .idea/
