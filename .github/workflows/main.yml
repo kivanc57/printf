@@ -16,6 +16,9 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
+
+      - name: List files for debugging
+        run: ls -al
       
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
