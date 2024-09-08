@@ -11,9 +11,6 @@ __pycache__/
 sample
 tests
 
-# Github Actions
-.github
-
 # Editor directories and files
 .idea/
 .vscode/
