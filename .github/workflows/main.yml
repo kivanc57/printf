@@ -38,7 +38,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          file: Dockerfile
           push: false
           tags: kivanc57/printf:latest #DockerHub repo
   
@@ -59,6 +58,5 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          file: Dockerfile
           push: true
           tags: kivanc57/printf:latest
