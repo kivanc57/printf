@@ -7,9 +7,12 @@ __pycache__/
 *.so
 *.o
 
-#Folders
+# Folders
 sample
 tests
+
+# Github Actions
+.github
 
 # Editor directories and files
 .idea/
