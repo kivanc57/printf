@@ -1,3 +1,13 @@
+Turn on docker-compose
+
+`docker-compose up`
+
+Turn off docker-compose
+
+`docker-compose down`
+
+# OR
+
 Build the Docker image
 
 `docker build -f Dockerfile -t local-printf:latest .`
