@@ -1,7 +1,3 @@
-Move to the DockerFileFolder
-
-`cd build-context`
-
 Build the Docker image
 
 `docker build -f Dockerfile -t local-printf:latest .`
