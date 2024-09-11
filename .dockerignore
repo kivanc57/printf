@@ -12,9 +12,6 @@ sample/
 tests/
 
 # Others
-LICENSE
-manual.pdf
-README.md
 .gitattributes
 .gitignore
 .github/
